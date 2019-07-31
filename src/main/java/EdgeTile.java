@@ -37,4 +37,10 @@ public class EdgeTile implements Limit {
     public Region splitRegion(Region region) {
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "\n TileEdge [origin=" + origin.getOrder() + ", destination=" + destination.getOrder() + ", region="
+                + region + "]";
+    }
 }
