@@ -5,6 +5,7 @@ public class Tile {
     private Region south;
     private Region east;
     private Region center;
+    List<EdgeTile> edges;
 
     public Tile(Region north,
                 Region west,
