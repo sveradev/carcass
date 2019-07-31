@@ -2,10 +2,12 @@ public class EdgeTile implements Limit {
 
     private Tile origin;
     private Tile destination;
+    private Region region;
 
-    public EdgeTile(Tile origin, Tile destination) {
+    public EdgeTile(Tile origin, Tile destination,Region region) {
         this.origin = origin;
         this.destination = destination;
+        this.region = region;
     }
 
     public Tile getOrigin() {
@@ -22,6 +24,14 @@ public class EdgeTile implements Limit {
 
     public void setDestination(Tile destination) {
         this.destination = destination;
+    }
+
+    public Region getRegion() {
+        return region;
+    }
+
+    public void setRegion(Region region) {
+        this.region = region;
     }
 
     public Region splitRegion(Region region) {
