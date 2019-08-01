@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Game extends Expansion {
+public class Game implements Expansion {
 
     private List<Gamer> gamers;
     private Map map;
