@@ -1,7 +1,6 @@
 public class Monasterie extends Building {
-    private Tile basement;
 
-    public Tile getBasement() {
-        return basement;
+    public int getPoints() {
+        return 9;
     }
 }
