@@ -7,8 +7,13 @@ public class Rules {
     private Tile startTile;
     private List<Tile> tiles;
 
-    public Rules() {
-        this.startTile = new Tile(0, new City(null,new Wall(),new Wall(),new Wall()), new Road(), new Field(), new Road());
+    public Rules(Tile starTile) {
+        if(starTile == null){
+            City city = new City(null,new Wall(),new Wall(),new Wall());
+            Road road = new Road();
+            Field field = new Field();
+            this.startTile = new Tile(city,road,field,road,road);
+        }
         this.tiles = createTiles();
     }
 
@@ -38,8 +43,8 @@ public class Rules {
     public List<Tile> createTiles(){
         Region field = new Field();
         Region road = new Road();
-        Region city = new City();
-        Region monasterie = new Monasterie();
+        Region city = new City(null,null,null,null);
+        Region monastery = new Monastery();
         List<Tile> tiles = new ArrayList<Tile>();
         return tiles;
     }

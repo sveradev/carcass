@@ -6,20 +6,23 @@ public abstract class Region {
     private Limit south;
     private Limit east;
 
-    public Region (){
-    }
-
     public Region(
-            String name,
             Limit north,
             Limit west,
             Limit south,
             Limit east){
-        this.name = name;
         this.north = north;
         this.west = west;
         this.south = south;
         this.east = east;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Limit getNorth() {

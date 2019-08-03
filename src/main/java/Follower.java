@@ -1,10 +1,10 @@
 public class Follower {
     private int rank;
     private int points;
-    private Gamer gamer;
+    private Player player;
 
-    public Follower(Gamer gamer){
-        this.gamer = gamer;
+    public Follower(Player player){
+        this.player = player;
     }
 
     public int getRank() {
@@ -23,7 +23,7 @@ public class Follower {
         this.points = points;
     }
 
-    public Gamer getGamer() {
-        return gamer;
+    public Player getGamer() {
+        return player;
     }
 }

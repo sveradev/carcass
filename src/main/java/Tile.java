@@ -9,7 +9,6 @@ public class Tile {
     private Region east;
     private Region center;
 
-    private int order;
     private List<EdgeTile> edges;
 
     public Tile(Region north, Region west, Region south, Region east, Region center){
@@ -18,14 +17,6 @@ public class Tile {
         this.south = south;
         this.east = east;
         this.center = center;
-    }
-
-    public int getOrder() {
-        return order;
-    }
-
-    public void setOrder(int order) {
-        this.order = order;
     }
 
     public Region getNorth() {

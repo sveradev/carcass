@@ -1,4 +1,4 @@
-public class Monasterie extends Building {
+public class Monastery extends Building {
 
     public int getPoints() {
         return 9;

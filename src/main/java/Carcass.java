@@ -2,16 +2,18 @@ public class Carcass {
     public static Map getMap() {
 
 
-        Region field = new Field()
+        Region field = new Field();
+        Region city = new City(null,null,null,null);
+        Region road = new Road();
 
-        Tile tileStart = new Tile(0);
-        Tile nextTile = new Tile(0);
+        Tile tileStart = new Tile(city,road,field,road,road);
+        Tile nextTile = new Tile(field,road,field,road,road);
 
-        tileStart.addEdge(new EdgeTile(tileStart,nextTile,tileStart.get));
+        tileStart.addEdge(new EdgeTile(tileStart,nextTile,tileStart.getWest()));
 
 
         Map map = new Map(tileStart);
-        map.addTile(nextTile);
+        //map.addTile(nextTile);
         return map;
     }
 
