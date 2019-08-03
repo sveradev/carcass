@@ -1,4 +1,4 @@
-public class Road implements Available {
+public class Road extends Field implements Available {
 
     private final int POINTS = 1;
     private Follower follower;

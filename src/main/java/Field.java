@@ -1,20 +1,15 @@
 public class Field extends Region implements Available{
-    private Road road;
+
     private final int POINTS = 1;
     private Follower follower;
     private boolean available;
 
+    public Field(){
+        super();
+    }
+
     public Field(Limit north, Limit west, Limit south, Limit east) {
-        super(north, west, south, east);
-    }
-
-    public Field(Limit north, Limit west, Limit south, Limit east, Road road) {
-        super(north, west, south, east);
-        this.road = road;
-    }
-
-    public Road getRoad() {
-        return road;
+        super("Field", north, west, south, east);
     }
 
     public int getPoints() {

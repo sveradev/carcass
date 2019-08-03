@@ -12,13 +12,7 @@ public class Tile {
     private int order;
     private List<EdgeTile> edges;
 
-    public Tile(int order,
-                Region north,
-                Region west,
-                Region south,
-                Region east,
-                Region center){
-        this.order = order;
+    public Tile(Region north, Region west, Region south, Region east, Region center){
         this.north = north;
         this.west = west;
         this.south = south;
@@ -32,6 +26,26 @@ public class Tile {
 
     public void setOrder(int order) {
         this.order = order;
+    }
+
+    public Region getNorth() {
+        return north;
+    }
+
+    public Region getWest() {
+        return west;
+    }
+
+    public Region getSouth() {
+        return south;
+    }
+
+    public Region getEast() {
+        return east;
+    }
+
+    public Region getCenter() {
+        return center;
     }
 
     public List<EdgeTile> getEdges() {

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Gamer {
+public class Player {
 
     private String name;
     private String color;

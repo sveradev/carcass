@@ -3,7 +3,20 @@ import java.util.List;
 
 public class Map {
 
+    private Tile startTile;
     private List<Tile> tiles;
+
+    public Map(Tile startTile){
+        this.startTile = startTile;
+    }
+
+    public Tile getStartTile() {
+        return startTile;
+    }
+
+    public void setStartTile(Tile startTile) {
+        this.startTile = startTile;
+    }
 
     public void addTile(Tile tile) {
         if (tiles == null) {

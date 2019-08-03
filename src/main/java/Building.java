@@ -1,4 +1,4 @@
-public class Building implements Available{
+public class Building extends Region implements Available{
 
     private int points;
     private Tile basement;
